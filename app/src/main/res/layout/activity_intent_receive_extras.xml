@@ -7,17 +7,55 @@
     tools:context=".intent.IntentReceiveExtrasActivity">
 
     <TextView
+        android:id="@+id/nameCampoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Datos de la peronsa:"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/labelText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
         android:id="@+id/labelText"
         android:text="zona de texto"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameCampoNombre"
+        app:layout_constraintBottom_toTopOf="@id/nameCampoAuto"
          />
+
+    <TextView
+        android:id="@+id/nameCampoAuto"
+        android:text="Datos del automóvil:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelText"
+        android:paddingTop="48dp"
+        app:layout_constraintBottom_toTopOf="@id/datosAuto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/datosAuto"
+        android:text="datos del auto"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameCampoAuto"
+        app:layout_constraintBottom_toTopOf="@id/returnButton"
+        />
+
     <Button
         android:id="@+id/returnButton"
-        app:layout_constraintTop_toBottomOf="@+id/labelText"
+        app:layout_constraintTop_toBottomOf="@+id/datosAuto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="48dp"

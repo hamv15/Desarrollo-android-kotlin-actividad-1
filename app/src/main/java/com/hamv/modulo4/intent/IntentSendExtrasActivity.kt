@@ -21,7 +21,7 @@ class IntentSendExtrasActivity : AppCompatActivity() {
                 putExtra("EXTRA_LAST_NAME", "Meza");
                 putExtra("EXTRA_AGE", 25);
                 putExtra("EXTRA_IS_MARRIED", false);
-                putExtra("EXTRA_PERSON", Persona("Hugo", "PittZahut"))
+                putExtra("EXTRA_AUTO", Auto("Ford", "EcoSport", 2018, 38200.2,true))
             };
             //pasarle los parámetros
                 //Forma imple una por una
